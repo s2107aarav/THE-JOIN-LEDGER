@@ -39,6 +39,6 @@ Queries with child-to-child joins, complex predicates, arbitrary SQL or other ag
 
 The static React view talks to a dedicated worker. The worker parses and validates local inputs, computes exact amounts from indexed match counts and computes original row combinations only for visible evidence. The independent test-only SQLite oracle executes joins over small records. The published app reads the chosen files locally and keeps private inputs in tab memory.
 
-Deploy `dist` to Vercel or Cloudflare Pages, using the checked-in static security headers. See the [calculation method](docs/method.md), [privacy model](docs/privacy.md), [pilot and launch checklist](docs/validation.md) and [contribution guide](CONTRIBUTING.md).
+Deploy `dist` from `npm run build` to Vercel or Cloudflare Pages, using the checked-in static security headers. The public Sites deployment uses `npm run build:sites` to serve the same app through an asset-only edge adapter with the same headers. See the [calculation method](docs/method.md), [privacy model](docs/privacy.md), [pilot and launch checklist](docs/validation.md) and [contribution guide](CONTRIBUTING.md).
 
 MIT. The bundled font packages retain their upstream licences.

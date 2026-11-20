@@ -6,4 +6,4 @@ Imported data is held in tab memory. Clear the workspace or reload the page to d
 
 The default Markdown report contains join rules, generic table names, numerical counts and redacted explanations. Amounts and units, keys, and original field excerpts each require an explicit choice. Excerpts can include sensitive project information in any field. Review the full preview before copying, saving or printing. The preview is the same content that leaves the workspace. Feedback opens a blank GitHub issue.
 
-The Vercel and Cloudflare deployment configurations set an HTTP Content-Security-Policy for the document and worker. The policy disallows network connections and restricts asset sources. The app relies on the browser and its environment to enforce these rules.
+The Vercel and Cloudflare deployment configurations set an HTTP Content-Security-Policy for the document and worker. The public Sites deployment uses a small edge adapter that serves only the built public files with that same policy. The policy disallows network connections and restricts asset sources. The app relies on the browser and its environment to enforce these rules.
