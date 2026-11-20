@@ -1,0 +1,6 @@
+payment_id,order_id,amount
+PAY-01,O-17,70
+PAY-02,O-17,50
+PAY-03,O-24,90
+PAY-04,O-24,30
+PAY-05,O-31,60
